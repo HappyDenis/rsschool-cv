@@ -22,6 +22,6 @@ _mail: dao.denis@gmail.com_
    Also it would be awesome if you add links to source code)
    _later_
 7. Education (including courses, seminars, lectures, online learning)
-   * 2 higher education
-   _later_
+   * 2 higher education 
+   _all other will write later_
 8. English: B2 — Intermediate
