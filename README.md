@@ -1,1 +1,1 @@
-https://github.com/HappyDenis/rsschool-cv/cv
+https://happydenis.github.io/rsschool-cv/cv
