@@ -1,0 +1,25 @@
+/* div {
+  font: normal 15px "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: rgb(7, 24, 119);
+  text-align: left;
+}*/
+body {
+  background: #5e80a094; /* Цвет фона */
+  padding: 20px; /* Поля */
+  border: 2px solid #fffcfc; /* Параметры рамки */
+  /*margin: 10px; /* Отступы */
+  margin: auto; /*Центрирование блока по горизонтали*/
+}
+header,
+main {
+  background: #edf6ff; /* Цвет фона */
+  padding: 20px; /* Поля */
+  border: 2px solid #ffb889; /* Параметры рамки */
+  /* margin: auto; /*Центрирование блока по горизонтали -избыточно */
+}
+footer {
+  padding: 20px; /* Поля */
+  border: 2px solid #ffffff; /* Параметры рамки */
+  /* margin: auto; /*Центрирование блока по горизонтали -избыточно*/
+}
