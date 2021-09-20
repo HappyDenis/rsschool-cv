@@ -9,7 +9,9 @@ body {
   padding: 20px; /* Поля */
   border: 2px solid #fffcfc; /* Параметры рамки */
   /*margin: 10px; /* Отступы */
-  margin: auto; /*Центрирование блока по горизонтали*/
+  width: 80%;
+  margin: auto; /*Центрирование блока по горизонтали.
+   ! auto работает только в сочетании с width */
 }
 header,
 main {
