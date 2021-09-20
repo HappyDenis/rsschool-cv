@@ -9,7 +9,9 @@ body {
   padding: 20px; /* Поля */
   border: 2px solid #fffcfc; /* Параметры рамки */
   /*margin: 10px; /* Отступы */
-  margin: auto; /*Центрирование блока по горизонтали*/
+  width: 80%;
+  margin: auto; /*Центрирование блока по горизонтали.
+   ! auto работает только в сочетании с width */
 }
 header,
 main {
@@ -18,6 +20,21 @@ main {
   border: 2px solid #ffb889; /* Параметры рамки */
   /* margin: auto; /*Центрирование блока по горизонтали -избыточно */
 }
+
+.h1-hidden {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+
+
+
 footer {
   padding: 20px; /* Поля */
   border: 2px solid #ffffff; /* Параметры рамки */
