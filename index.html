@@ -2,13 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Резюме</title>
+    <title>CV</title>
 
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--for Code Highlight-->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
 
   <body>
     <header>
+      <nav class="header_nav nav_menu_desktop">
+        <ul class="ul_nav">
+          <li class="nav_item">
+            <a class="nav_link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#summary">Summary</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#skills">Skills</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#experience">Experience</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#portfolio">Portfolio</a>
+          </li>
+          <!--  <li class="nav_item"><a class="nav_link" href="#video">Video</a></li> -->
+          <li class="nav_item"><a class="nav_link" href="#code">Code</a></li>
+          <li class="nav_item">
+            <a class="nav_link" href="#education">Education</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#english">English</a>
+          </li>
+        </ul>
+      </nav>
       <img
         src="https://avatars.mds.yandex.net/get-pdb/901820/25691dde-2aaa-4a38-a405-7a149f82854d/s1200"
         alt="My picture"
@@ -16,10 +52,10 @@
       />
       <h1 class="h1-hidden">CV</h1>
       <h2>Denis Belobragin</h2>
-      <address>
-        <p>Contact:</p>
+      <address id="contacts">
+        <h3>Contact:</h3>
         <ul>
-         <!-- <li>tel: +7-916-0160807</li>-->
+          <!-- <li>tel: +7-916-0160807</li>-->
           <li>email: denisbel767@gmail.com</li>
           <li>github: happydenis</li>
         </ul>
@@ -27,78 +63,111 @@
     </header>
 
     <main>
-      <section>
-        <h3>
-          Hello. I have graduated a course «Website Development using HTML, CSS
-          and JavaScript”.
-        </h3>
-      </section>
-      <section>
-        <h3>
-          Summary (your goal, wishes, reveal what is important for you, what do
-          you want and why.
-        </h3>
+      <section id="summary">
+        <h3>Summary</h3>
         <article>
-          <h4>Some kind of self-presentation.</h4>
-          <p>
-            I have a year of work experiense as a front-end developer for a
-            company located in Moscow and over 5 years of self-employment
-            experience as a designer\front-end developer. <br />
-            Have a strong HTML\CSS knowledge, good knowledge of Figma\Photoshop
-            and UI\UX web-design, basic JavaScript knowledge. <br />
-            Work directly with English-speaking customers and had a chance to
-            work and polish my English in the USA so able to communicate in
-            English quite well. My goal in RSSchool is to polish HTML\CSS skills
-            to the latest best practices, learn JavaScript and React to become a
-            professional front-end developer.<br />
-            In future I'd also like to work with large teams to improve my
-            communication and project management skills.
-          </p>
+          Hello. I have graduated a course «Website Development using HTML, CSS
+          and JavaScript”. The main goal is to become a professional front-end
+          developer. I want to improve my JavaScript skills and to get the the
+          Frontend-job asap. In future I'd also like to work with large teams to
+          improve my communication and project management skills.
         </article>
       </section>
-      <section>
+      <section id="skills">
         <h3>
           Skills (e.g. programming languages, frameworks, methodologies, version
           control, tools etc.)
         </h3>
-        <p>My skills:</p>
         <ul>
-          <li>Figma, Photoshop</li>
-          <li>Git basics</li>
-          <li>HTML, CSS</li>
           <li>JavaScript</li>
-          <li>Bootstrap,BEМ</li>
-          <li>English</li>
+          <li>HTML, CSS</li>
+          <li>Figma, Photoshop</li>
+          <li>Git basics, Github</li>
+          <li>Bootstrap, Sass</li>
+          <li>English B2</li>
         </ul>
       </section>
-      <section>
-        <h3>Code examples (LATEST)</h3>
-        <code
-          >const FilterString = (value) => {<br />
+
+      <section id="experience">
+        <h3>Experience</h3>
+        <p>
+          I have a year of work experiense as a front-end developer for a
+          company located in Moscow and over 5 years of self-employment
+          experience as a designer\front-end developer. <br />
+          Have a strong HTML\CSS knowledge, good knowledge of Figma\Photoshop
+          and UI\UX web-design, basic JavaScript knowledge. Work directly with
+          English-speaking customers and had a chance to work and polish my
+          English in the USA so able to communicate in English quite well.<br />
+        </p>
+      </section>
+      <section id="portfolio">
+        <h3>Portfolio</h3>
+        <div>
+          <a
+            target="_blank"
+            href="https://rolling-scopes-school.github.io/happydenis-JSFE2021Q1/Wildlife/"
+            ><img
+              src="./assets/wildlife.jpg"
+              alt="WILDLIFE"
+              width="250"
+              height="150"
+          /></a>
+          <p>Project description: WILDLIFE learning project</p>
+          <p>Tools: HTML, CSS</p>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            href="https://rolling-scopes-school.github.io/happydenis-JSFE2021Q1/virtual-piano/"
+            ><img
+              src="./assets/virtualpiano.jpg"
+              alt="VIRTUAL PIANO"
+              width="250"
+              height="150"
+          /></a>
+          <p>
+            Project description: VIRTUAL PIANO. You can click using the mouse or
+            the corresponding key on the keyboard
+          </p>
+          <p>Tools: HTML, CSS, Javascript</p>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            href="https://rolling-scopes-school.github.io/happydenis-JSFE2021Q1/online-zoo/"
+            ><img
+              src="/assets/online-zoo.jpg"
+              alt="ONLINE ZOO"
+              width="250"
+              height="150"
+            />
+          </a>
+          <p>
+            Project description: ONLINE ZOO. This is an online zoo that gives
+            you the opportunity to see pets in any of the zoos or in the wild,
+            where there are cameras of constant broadcast.
+          </p>
+          <p>Tools: HTML, CSS, Javascript</p>
+        </div>
+      </section>
+      <section id="code">
+        <h3>Code examples</h3>
+        <pre><code>const FilterString = (value) => {<br />
           value = String(value) <br />
           .split('')<br />
           .filter((el) => {return !isNaN(el)}) <br />
           .join(''); return(Number(value));<br />
-          };
-        </code>
+          };</code></pre>
       </section>
-      <section>
-        <h3>
-          Experience (for a Junior Dev it means all kinds of experience: coding
-          tests, projects from courses,<br />
-          freelance projects - wherever they had the opportunity to demonstrate
-          skills they have.<br />
-          Also it would be awesome if you add links to source code)<br />
-        </h3>
-      </section>
-      <section>
+      <section id="education">
         <h3>
           Education (including courses, seminars, lectures, online learning)
         </h3>
-        <p>2 higher education</p>
+        <p>2 higher educations</p>
+        <p>Course Frontend and JavaScript Developer</p>
       </section>
-      <section>
-        <h3>English:</h3>
+      <section id="english">
+        <h3>English</h3>
         <p>B2 — Intermediate</p>
       </section>
     </main>
@@ -118,10 +187,7 @@
         /></a>
       </div>
 
-      <h4>
-        ВНИМАНИЕ! ЭТО РЕЗЮМЕ ТОЛЬКО ДЛЯ УЧЕБНОГО ЗАДАНИЯ, В НЕМ ВЫПОЛНЕНЫ ВСЕ
-        ФОРМАЛЬНЫЕ ТРЕБОВАНИЯ. КОНТАКТЫ АКТУАЛЬНЫЕ.
-      </h4>
+      <h5>ВНИМАНИЕ! ЭТО РЕЗЮМЕ ПОКА ТОЛЬКО ДЛЯ УЧЕБНОГО ЗАДАНИЯ</h5>
       <!--   <time datetime="07-03-2021"> March 07, 2021 </time>-->
     </footer>
   </body>
