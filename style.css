@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", sans-serif;
+}
 body {
   background: #5e80a094;
   padding: 20px;
@@ -5,14 +9,12 @@ body {
   width: 80%;
   margin: auto; /*Центрирование блока по горизонтали.
    ! auto работает только в сочетании с width */
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 header,
 main {
   background: #edf6ff;
   padding: 20px;
-  border: 2px solid gray; /* Параметры рамки */
+  border: 2px solid gray;
   /* margin: auto; /*Центрирование блока по горизонтали -избыточно */
 }
 .h1-hidden {
@@ -65,7 +67,7 @@ main {
   flex-direction: column;
   text-align: start;
   width: 100%;
-  min-height: 28vh;
+  min-height: 30vh;
 }
 .menu.active .nav_item {
   background: lightsteelblue;
