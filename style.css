@@ -12,6 +12,8 @@ body {
   width: 80%;
   margin: auto; /*Центрирование блока по горизонтали.
    ! auto работает только в сочетании с width */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 header,
 main {
@@ -32,8 +34,57 @@ main {
   visibility: hidden;
 }
 
+.header_nav {
+  position: relative;
+  top: 4px;
+  display: flex;
+  min-width: 780px;
+  justify-content: space-between;
+  align-items: center;
+  /*flex-wrap: nowrap;*/
+  text-align: center;
+  /*background: rgb(47, 255, 134);*/
+}
+@media screen and (max-width: 1199px) {
+  .header_nav {
+    min-width: 0px;
+    margin: 20px;
+  }
+}
 
-
+.ul_nav {
+  display: flex;
+  justify-content: space-between;
+  /*justify-content: space-evenly;*/
+  margin: 0 auto;
+  padding: 0;
+  width: 572px;
+  /*min-width: 492px;*/
+  font-size: 16px;
+  line-height: 19px;
+  /*color: var(--primary-color);*/
+  flex-direction: row;
+}
+.ul_nav li,
+.watch_icons li {
+  display: inline;
+  /*background: #aebeeb;*/
+}
+.ul_nav li a {
+  color: var(--primary-color);
+}
+.ul_nav li :hover {
+  border-bottom: 1px solid currentColor;
+  /*font-weight: 900;*/
+}
+.li_about a:hover {
+  color: var(--primary-color);
+}
+.underline {
+  border-bottom: 1px solid var(--primary-color);
+  font-weight: 900;
+  opacity: 1;
+}
 
 footer {
   padding: 20px; /* Поля */
