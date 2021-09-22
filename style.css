@@ -37,7 +37,7 @@ main {
   align-items: center;
   /*flex-wrap: nowrap;*/
   text-align: center;
-  margin: 5px;
+  margin: 6px;
 }
 
 .menu {
@@ -47,13 +47,12 @@ main {
   padding: 0;
   /* width: 572px;*/
   min-width: 272px;
-  font-size: 16px;
   line-height: 19px;
   flex-wrap: wrap;
 }
 .menu li {
   display: inline;
-  padding: 4px;
+  padding: 6px;
 }
 .menu li a {
   color: black;
@@ -67,10 +66,12 @@ main {
   flex-direction: column;
   text-align: start;
   width: 100%;
-  min-height: 30vh;
+  font-size: 14px;
+  /*min-height: 30vh;*/
 }
 .menu.active .nav_item {
   background: lightsteelblue;
+  margin: 2px;
 }
 
 .bar {
@@ -78,7 +79,7 @@ main {
   width: 28px;
   height: 3px;
   margin: 5px auto;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background: grey;
 }
 .burger {
@@ -94,7 +95,7 @@ main {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 540px) {
   .header_nav {
     justify-content: flex-end;
   }
@@ -107,8 +108,59 @@ main {
   }
 }
 
+h3 {
+  background-color: rgba(128, 128, 128, 0.212);
+  padding: 3px;
+}
+
+.contacts-me {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 8px 8px;
+  padding-top: 10px;
+  max-width: 500px;
+  height: 250px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 600px) {
+  .contacts-me {
+    flex-direction: row;
+    height: 366px;
+    gap: 8px 0;
+  }
+}
+
+.contacts-me > h2,
+#contacts > p {
+  margin: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.portfolio_projects {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
+  text-align: center;
+  font-style: oblique;
+  gap: 6px 6px;
+}
+.portfolio_projects > div {
+  width: 270px;
+  padding: 8px 0;
+  background-color: rgba(135, 206, 250, 0.384);
+}
+#code > pre {
+  font-size: 12px;
+  line-height: 12px;
+}
 footer {
   padding: 20px; /* Поля */
-  border: 2px solid #ffffff; /* Параметры рамки */
+  border: 2px solid gray; /* Параметры рамки */
   /* margin: auto; /*Центрирование блока по горизонтали -избыточно*/
 }
